@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <button id="button1" class="nav-link-button">Button 1</button>
+          </li>
+          <li class="nav-item">
+            <button id="button2" class="nav-link-button">Button 2</button>
+          </li>
+          <li class="nav-item">
+            <button id="button3" class="nav-link-button">Button 3</button>
+          </li>
+          <li class="nav-item">
+            <button id="button4" class="nav-link-button">Button 4</button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js'></script>
+  <script src="./script.js"></script>
+  <script>
+    // Add event listeners to the buttons
+    document.getElementById('button1').addEventListener('click', handleButton1Click);
+    document.getElementById('button2').addEventListener('click', handleButton2Click);
+    document.getElementById('button3').addEventListener('click', handleButton3Click);
+    document.getElementById('button4').addEventListener('click', handleButton4Click);
+
+    // Event handler functions
+    function handleButton1Click() {
+      window.open('page1.html', '_blank');
+    }
+
+    function handleButton2Click() {
+      window.open('page2.html', '_blank');
+    }
+
+    function handleButton3Click() {
+      window.open('page3.html', '_blank');
+    }
+
+    function handleButton4Click() {
+      window.open('page4.html', '_blank');
+    }
+  </script>
+  <div id="world"></div>
+</body>
+</html>
